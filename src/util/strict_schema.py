@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Harden a JSON schema for strict LLM JSON responses.
+
+Details: Recursively sets defaults like additionalProperties=False and required
+keys to ensure compliant outputs from JSON mode.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 def harden_schema(schema: dict) -> dict:
@@ -30,4 +39,3 @@ def harden_schema(schema: dict) -> dict:
             schema[key] = [harden_schema(s) for s in schema[key]]
 
     return schema
-

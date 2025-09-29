@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Preset kitbash component lists for quick examples (e.g., tugboat, house).
+
+Details: Utility helpers that return lists of primitive parts for known objects,
+used for demos or fallbacks.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 from typing import List, Dict, Any

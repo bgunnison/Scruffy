@@ -1,3 +1,14 @@
+"""
+Author: Brian Gunnison
+
+Brief: Interactive pyrender/trimesh viewer for JSON primitive scenes (orbit/pan/zoom).
+
+Details: Loads a plan/kitbash JSON, builds meshes (cube/sphere/cylinder/cone/plane/torus),
+auto-frames a camera, and opens an interactive window. Often launched via
+src.adapter.pyviewer_cli.
+"""
+# SPDX-License-Identifier: MIT
+
 # json3d_viewer.py
 # Interactive viewer for "primitives + transforms" JSON (mouse orbit/pan/zoom).
 # Usage:  python src/3dviewer.py

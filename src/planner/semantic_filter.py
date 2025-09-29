@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: LLM‑based object/action/path extraction from a scene description.
+
+Details: Loads a configurable system prompt and requests structured JSON with
+objects, actions, and paths; used by the iterative flow.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import json

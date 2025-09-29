@@ -1,3 +1,11 @@
+"""
+Author: Brian Gunnison
+
+Brief: Colored console logging helpers with timestamps.
+
+Details: Thin wrapper around print() that uses colorama and a HH:MM:SS prefix.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import sys
@@ -26,4 +34,3 @@ def warn(msg: str) -> None:
 
 def error(msg: str) -> None:
     print(f"{Fore.RED}[{_ts()}] ERR {Style.RESET_ALL} {msg}", file=sys.stderr)
-

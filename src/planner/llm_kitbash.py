@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: LLM‑based kitbashing to convert objects into primitive parts under a strict schema.
+
+Details: Selects a prompt variant, hardens a JSON schema, and requests parts
+for each object with bounded sizes and counts (reality factor / max parts).
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import json

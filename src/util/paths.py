@@ -1,3 +1,11 @@
+"""
+Author: Brian Gunnison
+
+Brief: Repository path utilities (repo_root/src_root/out_dir/adapter_dir).
+
+Details: Centralizes filesystem roots and ensures output directory creation.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 from pathlib import Path
@@ -20,4 +28,3 @@ def out_dir() -> Path:
 
 def adapter_dir() -> Path:
     return src_root() / "adapter"
-

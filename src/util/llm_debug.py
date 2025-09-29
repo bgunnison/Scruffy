@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Toggle and emit verbose logs of LLM prompts and responses.
+
+Details: Global on/off flag with simple pretty logging used throughout planner
+modules when debugging.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
@@ -28,4 +37,3 @@ def log_messages(label: str, messages: List[Dict[str, Any]], extra: Optional[Dic
     if extra:
         for k, v in extra.items():
             log.info(f"[{label}:{k}] {v}")
-

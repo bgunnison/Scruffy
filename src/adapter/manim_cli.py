@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: CLI helpers to render a plan with Manim (optional preview path).
+
+Details: Locates src/json2manim.py and executes still/animation rendering via
+subprocess; requires Manim/OpenGL stack when used.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import os

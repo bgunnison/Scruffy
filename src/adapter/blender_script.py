@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Blender in‑process script to build primitives from a plan/kitbash and render/save outputs.
+
+Details: Parses CLI args passed after "--" by Blender, constructs scene objects,
+auto-frames a camera, renders animation/still or prepares a .blend for GUI edits.
+"""
+# SPDX-License-Identifier: MIT
 # This script runs inside Blender (bpy available)
 from __future__ import annotations
 

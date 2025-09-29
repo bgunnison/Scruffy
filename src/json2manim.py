@@ -1,14 +1,16 @@
 """
-json2manim.py — render a DreamFast plan JSON with Manim
+Author: Brian Gunnison
+
+Brief: Render a DreamFast plan JSON with Manim (optional preview path).
+
+Details: Builds simple Manim 3D primitives from a plan, supports still/animation
+outputs, and a preview mode (OpenGL). Requires Manim and its OpenGL stack.
 
 Usage:
   python json2manim.py --plan path/to/plan.json --out out.png --mode still
   python json2manim.py --plan path/to/plan.json --out out.mp4 --mode animation
-
-Notes:
-- Uses only hex colors (no manim.color import) for compatibility.
-- For 'still', saves the last frame. For 'animation', writes an MP4.
 """
+# SPDX-License-Identifier: MIT
 
 from __future__ import annotations
 

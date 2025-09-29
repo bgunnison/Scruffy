@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Launch the interactive 3D viewer in a separate process for a plan JSON.
+
+Details: Spawns src/3dviewer.py with DF_VIEW_JSON/DF_VIEW_TITLE env vars so the
+viewer window opens without blocking the main process.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import os

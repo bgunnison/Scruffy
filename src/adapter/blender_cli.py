@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Helpers to run Blender headless for animation/stills and open Blender GUI from a plan.
+
+Details: Invokes src/adapter/blender_script.py with either animation, still, or
+GUI-edit modes, using a detected or provided Blender executable path.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import os

@@ -1,4 +1,14 @@
 #!/usr/bin/env python
+"""
+Author: Brian Gunnison
+
+Brief: Interactive REPL to extract objects, kitbash into primitives, and preview per‑object sketches.
+
+Details: Provides a simple prompt loop that calls the iterative flow in
+src.orchestrator.interactive to synthesize parts, open previews, and optionally
+render stills via Blender.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import os

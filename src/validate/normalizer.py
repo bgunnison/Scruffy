@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Normalize and clamp ScenePlan values for fast, safe previews.
+
+Details: Applies bounds, defaults, and rejects unsupported operations to keep
+renders predictable and performant.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 from typing import List

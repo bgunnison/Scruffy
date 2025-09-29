@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Iterative flow to extract objects, synthesize kitbash parts, preview, and optionally render stills.
+
+Details: Uses semantic LLM extraction, kitbash synthesis, normalization, and
+either the Python viewer or Blender for quick per‑object feedback.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import json

@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Pydantic models and JSON schema for the DreamFast ScenePlan.
+
+Details: Defines primitives, transforms, camera, render settings, and object specs
+validated at load/normalize time.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 from typing import List, Literal, Optional

@@ -1,3 +1,12 @@
+"""
+Author: Brian Gunnison
+
+Brief: Locate a usable Blender executable, prompting the user and caching to .env.
+
+Details: Searches common install paths per OS, confirms with the user, and
+persists BLENDER_PATH for subsequent runs.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import os

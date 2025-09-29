@@ -1,3 +1,11 @@
+"""
+Author: Brian Gunnison
+
+Brief: dotenv loader and environment helper utilities.
+
+Details: Loads .env (without override), retrieves optional/required strings.
+"""
+# SPDX-License-Identifier: MIT
 from __future__ import annotations
 
 import os
@@ -18,4 +26,3 @@ def require_env_str(key: str) -> str:
     if not val:
         raise RuntimeError(f"Missing environment variable: {key}")
     return val
-
