@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "description": "Tugboat kitbash converted for 3dviewer",
+  "render": {
+    "duration_seconds": 5.0,
+    "fps": 24,
+    "resolution_x": 1280,
+    "resolution_y": 720,
+    "background_color": { "r": 0.05, "g": 0.08, "b": 0.12 }
+  },
+  "objects": [
+    {"name": "hull_box", "type": "cube", "color": {"r":0.70,"g":0.12,"b":0.12},
+      "dimensions": [3.2, 1.6, 0.9],
+      "transform": {"location": [0.0, 0.0, 0.45], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "deck", "type": "cube", "color": {"r":0.55,"g":0.55,"b":0.55},
+      "dimensions": [2.6, 1.1, 0.2],
+      "transform": {"location": [0.0, 0.0, 1.1], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "cabin_base", "type": "cube", "color": {"r":0.92,"g":0.92,"b":0.92},
+      "dimensions": [1.6, 1.2, 0.3],
+      "transform": {"location": [-0.3, 0.0, 1.3], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "cabin", "type": "cube", "color": {"r":0.92,"g":0.92,"b":0.92},
+      "dimensions": [1.2, 1.0, 0.8],
+      "transform": {"location": [-0.3, 0.0, 1.7], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "win_front_left", "type": "cube", "color": {"r":0.60,"g":0.80,"b":0.90},
+      "dimensions": [0.02, 0.32, 0.28],
+      "transform": {"location": [0.25, -0.20, 1.75], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "win_front_right", "type": "cube", "color": {"r":0.60,"g":0.80,"b":0.90},
+      "dimensions": [0.02, 0.32, 0.28],
+      "transform": {"location": [0.25, 0.20, 1.75], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "win_starboard_a", "type": "cube", "color": {"r":0.60,"g":0.80,"b":0.90},
+      "dimensions": [0.36, 0.02, 0.28],
+      "transform": {"location": [-0.50, 0.49, 1.75], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "stack_shaft", "type": "cylinder", "color": {"r":0.92,"g":0.92,"b":0.92},
+      "dimensions": [0.12, 0.12, 0.90],
+      "transform": {"location": [0.30, 0.00, 2.10], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "stack_cap", "type": "cylinder", "color": {"r":0.92,"g":0.92,"b":0.92},
+      "dimensions": [0.20, 0.20, 0.20],
+      "transform": {"location": [0.30, 0.00, 2.60], "rotation_degrees": [0,0,0], "scale": [1,1,1]}},
+
+    {"name": "fender_sb_1", "type": "torus", "color": {"r":0.05,"g":0.05,"b":0.05},
+      "dimensions": [0.56, 0.56, 0.24],
+      "transform": {"location": [-0.80, 0.94, 0.70], "rotation_degrees": [0,90,0], "scale": [1,1,1]}},
+
+    {"name": "fender_sb_2", "type": "torus", "color": {"r":0.05,"g":0.05,"b":0.05},
+      "dimensions": [0.56, 0.56, 0.24],
+      "transform": {"location": [0.00, 0.94, 0.70], "rotation_degrees": [0,90,0], "scale": [1,1,1]}},
+
+    {"name": "fender_sb_3", "type": "torus", "color": {"r":0.05,"g":0.05,"b":0.05},
+      "dimensions": [0.56, 0.56, 0.24],
+      "transform": {"location": [0.80, 0.94, 0.70], "rotation_degrees": [0,90,0], "scale": [1,1,1]}},
+
+    {"name": "fender_pt_1", "type": "torus", "color": {"r":0.05,"g":0.05,"b":0.05},
+      "dimensions": [0.56, 0.56, 0.24],
+      "transform": {"location": [-0.80, -0.94, 0.70], "rotation_degrees": [0,90,0], "scale": [1,1,1]}},
+
+    {"name": "fender_pt_2", "type": "torus", "color": {"r":0.05,"g":0.05,"b":0.05},
+      "dimensions": [0.56, 0.56, 0.24],
+      "transform": {"location": [0.00, -0.94, 0.70], "rotation_degrees": [0,90,0], "scale": [1,1,1]}},
+
+    {"name": "fender_pt_3", "type": "torus", "color": {"r":0.05,"g":0.05,"b":0.05},
+      "dimensions": [0.56, 0.56, 0.24],
+      "transform": {"location": [0.80, -0.94, 0.70], "rotation_degrees": [0,90,0], "scale": [1,1,1]}}
+  ]
+}

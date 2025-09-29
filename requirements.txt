@@ -1,0 +1,6 @@
+openai>=1.40.0
+pydantic>=2.6.1
+python-dotenv>=1.0.1
+colorama>=0.4.6
+# Interactive 3D viewer dependencies (trimesh/numpy/PyOpenGL/pyglet come via pyrender)
+pyrender>=0.1.45

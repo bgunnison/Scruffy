@@ -1,0 +1,107 @@
+{
+    "default": "improved_codex2",
+    "reality_factor": {
+        "default": 5,
+        "doc": "Controls parts budget; maps directly to max parts (set 0 to use a placeholder box)."
+    },
+    "silhouette_first": {
+        "doc": "Start with large shapes to ensure a recognizable outline; add only essential accents within budget.",
+        "lines": [
+            "You convert objects into kitbashed primitives.",
+            "Rules:",
+            "- Primitives only: {cube,sphere,cylinder,cone,plane,torus}.",
+            "- Each part has: name, type, dimensions[x,y,z], location[x,y,z], rotation_degrees[x,y,z], color[r,g,b 0..1].",
+            "- Sizes in meters within [0.1..20]. Keep assembly near origin; no environment/camera/animation fields.",
+            "- Use as few parts as possible (typically 3–8). Only add parts that materially improve recognition.",
+            "- Local axes: cylinders/cones/torus are +Z–aligned before rotation; cubes/planes are box-aligned.",
+            "- Budget: respect max_parts; smaller is better if recognizable.",
+            "- Maintain coherent relative placement: parts should touch or nest logically; avoid floating or intersecting unnaturally.",
+            "Output exactly this JSON shape: {\"objects\":[{\"name\":<string>,\"parts\":[...]}],\"meta\":{\"reality_factor\":<int>}}"
+        ]
+    },
+    "coarse_then_detail": {
+        "doc": "Block out coarse volumes first; add minimal detail only if the silhouette is already strong.",
+        "lines": [
+            "You convert objects into kitbashed primitives.",
+            "Rules:",
+            "- Primitives only: {cube,sphere,cylinder,cone,plane,torus}.",
+            "- Each part has: name, type, dimensions[x,y,z], location[x,y,z], rotation_degrees[x,y,z], color[r,g,b 0..1].",
+            "- Sizes in meters within [0.1..20]. Keep assembly near origin; no environment/camera/animation fields.",
+            "- Build coarse volumes first to form the object's body; add at most {max_parts} parts (aim 3–8). Increase detail only if silhouette is already clear.",
+            "- Local axes: cylinders/cones/torus are +Z–aligned before rotation; cubes/planes are box-aligned.",
+            "- reality_factor={reality_factor} → max_parts={max_parts}.",
+            "Output exactly this JSON shape: {\"objects\":[{\"name\":<string>,\"parts\":[...]}],\"meta\":{\"reality_factor\":<int>}}"
+        ]
+    },
+    "symmetry_aware": {
+        "doc": "Prefer symmetric paired parts (left/right) when natural; keep counts within budget and avoid tiny greebles.",
+        "lines": [
+            "You convert objects into kitbashed primitives.",
+            "Rules:",
+            "- Primitives only: {cube,sphere,cylinder,cone,plane,torus}.",
+            "- Each part has: name, type, dimensions[x,y,z], location[x,y,z], rotation_degrees[x,y,z], color[r,g,b 0..1].",
+            "- Sizes in meters within [0.1..20]. Keep assembly near origin; no environment/camera/animation fields.",
+            "- Prefer symmetric paired parts when applicable (e.g., left/right) but keep counts within {max_parts}; default to minimal pairs only.",
+            "- Emphasize silhouette; avoid tiny greebles unless reality_factor is high.",
+            "- Local axes: cylinders/cones/torus are +Z–aligned before rotation; cubes/planes are box-aligned.",
+            "- reality_factor={reality_factor}.",
+            "Output exactly this JSON shape: {\"objects\":[{\"name\":<string>,\"parts\":[...]}],\"meta\":{\"reality_factor\":<int>}}"
+        ]
+    },
+    "improved_codex1": {
+        "doc": "Stricter, general kitbash guidance for recognizable results without object-specific details.",
+        "lines": [
+            "You convert objects into kitbashed primitives.",
+            "Rules:",
+            "- Primitives only: {cube,sphere,cylinder,cone,plane,torus}.",
+            "- Each part has: name, type, dimensions[x,y,z], location[x,y,z], rotation_degrees[x,y,z], color[r,g,b 0..1].",
+            "- Output only these fields; no additional keys or comments.",
+            "- Units: meters. Round numeric values to 2 decimals.",
+            "- Bounds: dimensions in [0.1..3]; locations in each axis within [-2..2].",
+            "- Keep the assembly near the origin; no environment/camera/animation.",
+            "- Silhouette-first: start with the largest main body; add minimal accent parts within budget.",
+            "- Part count: never exceed {max_parts} (reality_factor={reality_factor}); prefer the minimum that is recognizable.",
+            "- Maintain coherent relative placement; keep assemblies compact around the origin.",
+            "- Orientation: keep parts axis-aligned by default; only rotate when necessary for silhouette.",
+            "- Local axes: cylinders/cones/torus are +Z–aligned before rotation; cubes/planes are box-aligned.",
+            "- Color: if an input object specifies color {r,g,b}∈[0..1], use it consistently across parts; otherwise choose simple, coherent colors.",
+            "Output exactly this JSON shape: {\"objects\":[{\"name\":<string>,\"parts\":[...]}],\"meta\":{\"reality_factor\":<int>}}"
+        ]
+    },
+    "improved_codex2": {
+        "doc": "Stricter, general kitbash guidance for recognizable results without object-specific details.",
+        "lines": [
+            "You convert objects into a small number of components.",
+          
+            "Rules:",
+            "- Decompose → rank by salience.",
+            "- Primitives only: {cube,sphere,cylinder,cone,plane,torus}.",
+            "- Each component is mapped into its most representational primitive. ",
+            "- Each component has: name, type, dimensions[x,y,z], location[x,y,z], rotation_degrees[x,y,z], color[r,g,b 0..1].",
+            "- Scale, position and rotate each primitive to bound the object's component it represents.",
+            "- Make primitives touch (no gaps) if that is what they do in the object",
+            "- Output only these fields; no additional keys or comments.",
+            "- Units: meters. Round numeric values to 2 decimals.",
+            "- Bounds: dimensions in [0.1..3]; locations in each axis within [-2..2].",
+            "- Keep the assembly near the origin; no environment/camera/animation.",
+            "- Silhouette-first: start with the largest main body; add less salient parts within budget.",
+            "- Part count: never exceed {max_parts}, prefer the minimum that is recognizable.",
+            "- Maintain coherent relative placement; keep assemblies compact around the origin.",
+            "- Orientation: keep parts axis-aligned by default; only rotate when necessary for silhouette.",
+            "- Local axes: cylinders/cones/torus are +Z–aligned before rotation; cubes/planes are box-aligned.",
+            "- Color: if an input object specifies color {r,g,b}∈[0..1], use it consistently across parts; otherwise choose simple, coherent colors.",
+            "Output exactly this JSON shape: {\"objects\":[{\"name\":<string>,\"parts\":[...]}],\"meta\":{\"reality_factor\":<int>}}"
+        ]
+    },
+
+    "object_extraction": {
+        "doc": "Minimal system prompt to extract only objects from a scene description.",
+        "lines": [
+            "Extract only the objects mentioned in the user's description.",
+            "Return JSON with key 'objects': an array of {name, category, color}.",
+            "Use concise, singular names; deduplicate by type and near-synonyms.",
+            "Category should describe the object type itself (e.g., 'chair', 'box'), not a broad class like 'furniture' or 'object'. If unsure, repeat the name.",
+            "Include color as {r,g,b} in [0..1]; if color isn't specified, use neutral gray {r:0.7,g:0.7,b:0.7}."
+        ]
+    }
+}

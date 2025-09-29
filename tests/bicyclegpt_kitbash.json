@@ -1,0 +1,247 @@
+{
+    "objects": [
+        {
+            "name": "bicycle",
+            "parts": [
+                /* --- Wheels (front) --- */
+                {
+                    "name": "front_tire",
+                    "type": "torus",
+                    "dimensions": [ 0.35, 0.03, 0.03 ],
+                    "location": [ 0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.10, 0.10, 0.10 ]
+                },
+                {
+                    "name": "front_rim",
+                    "type": "torus",
+                    "dimensions": [ 0.30, 0.01, 0.01 ],
+                    "location": [ 0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.80, 0.80, 0.80 ]
+                },
+                {
+                    "name": "front_hub",
+                    "type": "cylinder",
+                    "dimensions": [ 0.08, 0.05, 0.05 ],
+                    "location": [ 0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.70, 0.70, 0.70 ]
+                },
+                {
+                    "name": "front_axle",
+                    "type": "cylinder",
+                    "dimensions": [ 0.12, 0.02, 0.02 ],
+                    "location": [ 0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.40, 0.40, 0.40 ]
+                },
+
+                /* --- Wheels (rear) --- */
+                {
+                    "name": "rear_tire",
+                    "type": "torus",
+                    "dimensions": [ 0.35, 0.03, 0.03 ],
+                    "location": [ -0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.10, 0.10, 0.10 ]
+                },
+                {
+                    "name": "rear_rim",
+                    "type": "torus",
+                    "dimensions": [ 0.30, 0.01, 0.01 ],
+                    "location": [ -0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.80, 0.80, 0.80 ]
+                },
+                {
+                    "name": "rear_hub",
+                    "type": "cylinder",
+                    "dimensions": [ 0.08, 0.05, 0.05 ],
+                    "location": [ -0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.70, 0.70, 0.70 ]
+                },
+                {
+                    "name": "rear_axle",
+                    "type": "cylinder",
+                    "dimensions": [ 0.12, 0.02, 0.02 ],
+                    "location": [ -0.85, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.40, 0.40, 0.40 ]
+                },
+
+                /* --- Frame (diamond) --- */
+                {
+                    "name": "head_tube",
+                    "type": "cylinder",
+                    "dimensions": [ 0.25, 0.07, 0.07 ],
+                    "location": [ 0.55, 0.0, 0.90 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.65, 0.65, 0.70 ]
+                },
+                {
+                    "name": "top_tube",
+                    "type": "cylinder",
+                    "dimensions": [ 0.75, 0.06, 0.06 ],
+                    "location": [ 0.175, 0.0, 1.025 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.65, 0.65, 0.70 ]
+                },
+                {
+                    "name": "down_tube",
+                    "type": "cylinder",
+                    "dimensions": [ 1.23, 0.07, 0.07 ],
+                    "location": [ -0.025, 0.0, 0.575 ],
+                    "rotation_degrees": [ 0, -69, 0 ],
+                    "color": [ 0.65, 0.65, 0.70 ]
+                },
+                {
+                    "name": "seat_tube",
+                    "type": "cylinder",
+                    "dimensions": [ 0.81, 0.07, 0.07 ],
+                    "location": [ -0.40, 0.0, 0.70 ],
+                    "rotation_degrees": [ 0, -30, 0 ],
+                    "color": [ 0.65, 0.65, 0.70 ]
+                },
+
+                /* --- Rear triangle --- */
+                {
+                    "name": "chainstay_left",
+                    "type": "cylinder",
+                    "dimensions": [ 0.25, 0.05, 0.05 ],
+                    "location": [ -0.725, 0.05, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.60, 0.60, 0.65 ]
+                },
+                {
+                    "name": "chainstay_right",
+                    "type": "cylinder",
+                    "dimensions": [ 0.25, 0.05, 0.05 ],
+                    "location": [ -0.725, -0.05, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.60, 0.60, 0.65 ]
+                },
+                {
+                    "name": "seatstay_left",
+                    "type": "cylinder",
+                    "dimensions": [ 0.96, 0.05, 0.05 ],
+                    "location": [ -0.275, 0.05, 0.725 ],
+                    "rotation_degrees": [ 0, -43, 0 ],
+                    "color": [ 0.60, 0.60, 0.65 ]
+                },
+                {
+                    "name": "seatstay_right",
+                    "type": "cylinder",
+                    "dimensions": [ 0.96, 0.05, 0.05 ],
+                    "location": [ -0.275, -0.05, 0.725 ],
+                    "rotation_degrees": [ 0, -43, 0 ],
+                    "color": [ 0.60, 0.60, 0.65 ]
+                },
+
+                /* --- Fork & steering --- */
+                {
+                    "name": "fork_blade_left",
+                    "type": "cylinder",
+                    "dimensions": [ 0.55, 0.05, 0.05 ],
+                    "location": [ 0.70, 0.05, 0.575 ],
+                    "rotation_degrees": [ 0, 60, 0 ],
+                    "color": [ 0.60, 0.60, 0.65 ]
+                },
+                {
+                    "name": "fork_blade_right",
+                    "type": "cylinder",
+                    "dimensions": [ 0.55, 0.05, 0.05 ],
+                    "location": [ 0.70, -0.05, 0.575 ],
+                    "rotation_degrees": [ 0, 60, 0 ],
+                    "color": [ 0.60, 0.60, 0.65 ]
+                },
+                {
+                    "name": "stem",
+                    "type": "cylinder",
+                    "dimensions": [ 0.12, 0.05, 0.05 ],
+                    "location": [ 0.62, 0.0, 1.02 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.35, 0.35, 0.35 ]
+                },
+                {
+                    "name": "handlebar",
+                    "type": "cylinder",
+                    "dimensions": [ 0.60, 0.04, 0.04 ],
+                    "location": [ 0.62, 0.0, 1.05 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.15, 0.15, 0.15 ]
+                },
+
+                /* --- Saddle & post --- */
+                {
+                    "name": "seatpost",
+                    "type": "cylinder",
+                    "dimensions": [ 0.25, 0.05, 0.05 ],
+                    "location": [ -0.20, 0.0, 1.18 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.35, 0.35, 0.35 ]
+                },
+                {
+                    "name": "saddle_base",
+                    "type": "cube",
+                    "dimensions": [ 0.35, 0.12, 0.06 ],
+                    "location": [ -0.05, 0.0, 1.30 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.20, 0.20, 0.20 ]
+                },
+                {
+                    "name": "saddle_nose",
+                    "type": "cone",
+                    "dimensions": [ 0.18, 0.06, 0.06 ],
+                    "location": [ 0.10, 0.0, 1.29 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.20, 0.20, 0.20 ]
+                },
+
+                /* --- Crankset & pedals --- */
+                {
+                    "name": "chainring",
+                    "type": "torus",
+                    "dimensions": [ 0.11, 0.01, 0.01 ],
+                    "location": [ -0.60, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.70, 0.70, 0.70 ]
+                },
+                {
+                    "name": "crank_arm_front",
+                    "type": "cylinder",
+                    "dimensions": [ 0.34, 0.04, 0.04 ],
+                    "location": [ -0.43, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.55, 0.55, 0.60 ]
+                },
+                {
+                    "name": "crank_arm_rear",
+                    "type": "cylinder",
+                    "dimensions": [ 0.34, 0.04, 0.04 ],
+                    "location": [ -0.77, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 90, 0 ],
+                    "color": [ 0.55, 0.55, 0.60 ]
+                },
+                {
+                    "name": "pedal_front",
+                    "type": "cube",
+                    "dimensions": [ 0.10, 0.05, 0.02 ],
+                    "location": [ -0.26, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.15, 0.15, 0.15 ]
+                },
+                {
+                    "name": "pedal_rear",
+                    "type": "cube",
+                    "dimensions": [ 0.10, 0.05, 0.02 ],
+                    "location": [ -0.94, 0.0, 0.35 ],
+                    "rotation_degrees": [ 0, 0, 0 ],
+                    "color": [ 0.15, 0.15, 0.15 ]
+                }
+            ]
+        }
+    ],
+    "meta": { "reality_factor": 5 }
+}
