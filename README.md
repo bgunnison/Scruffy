@@ -7,7 +7,7 @@ Fast AI generated text‑to‑3D previews. Type a scene description and get quic
 <span style="display:inline-block; margin: 0 10px; font-size: 28px; vertical-align: middle;">→</span>
 <img src="tests/gpttugboatkitpic.png" alt="2) Kitbash Sketch" width="260"/>
 <span style="display:inline-block; margin: 0 10px; font-size: 28px; vertical-align: middle;">→</span>
-<img src="out/from_kitbash/tugboat_kitbash.png" alt="3) Sketch Preview" width="260"/>
+<img src="tests/tugboatrender.png" alt="3) Sketch Preview" width="260"/>
   
 </p>
 
